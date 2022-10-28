@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário para devs</title>
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="../formulario-devs/assets/css/style.css">
+    </head>
+
+    <body>
+        <main>
+            <div class="container">
+                <div class="ficha-cadastral">
+                    <h2 class="titulo-ficha-cadastral">Ficha cadastral para devs</h2>
+                </div>
+                <div>
+                    <form class="formulario">
+                        <fieldset class="dados-pessoais">
+                            <label class="espaco">Nome</label>
+                            <input class="espaco" type="text" required placeholder="João">
+
+                            <label class="espaco">Sobrenome</label>
+                            <input class="espaco" type="text" required placeholder="Silva">
+
+                            <label class="espaco">Telefone</label>
+                            <input class="espaco" type="number" required placeholder="(21) xxxx-xxxx">
+
+                            <label class="espaco" for="radio-email" value="email">E-mail</label>
+                            <input class="espaco" type="text" required placeholder="seuemail@gmail.com">
+                        </fieldset>
+
+                        <fieldset class="linguagens">
+                            <legend class="titulos">Qual dessas linguagens mais se identifica?</legend>
+
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="html" checked>html
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="css">css
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="javascript">javascript
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="php">php
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="python">python
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="c++">c++
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="c#">c#
+                            </label>
+                            <label class="espaco">
+                                <input type="radio" name="devweb" value="java">java
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="bibliotecas" id="check">
+                                <legend class="titulos">Selecione os Frameworks / Bibliotecas que utiliza:
+                                </legend>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia1" name="tecnologia1"
+                                    value="React.js">
+                                <label class="espaco" for="tecnologia1"> React.js</label>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia2" name="tecnologia2"
+                                    value="Angular">
+                                <label class="espaco" for="tecnologia2"> Angular</label>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia3" name="tecnologia3"
+                                    value="Ember.js">
+                                <label class="espaco" for="tecnologia3"> Ember.js</label>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia4" name="tecnologia4"
+                                    value="Vue">
+                                <label class="espaco" for="tecnologia4"> Vue</label>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia5" name="tecnologia5"
+                                    value="Svelte.js">
+                                <label class="espaco" for="tecnologia5"> Svelte.js</label>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia6" name="tecnologia6"
+                                    value="Backbone.js">
+                                <label class="espaco" for="tecnologia6"> Backbone.js</label>
+                                <input class="input-biblioteca" type="checkbox" id="tecnologia7" name="tecnologia7"
+                                    value="Preact.js">
+                                <label class="espaco" for="tecnologia7"> Preact.js</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="senioridade">
+                            <legend class="titulos" for="senioridade">Seu nivel de desenvolvedor</legend>
+
+                            <select class="espaco" id="senioridade" required>
+                                <option selected disabled value="">Selecione</option>
+
+                                <option>Conhecendo</option>
+                                <option>Estudante</option>
+                                <option>Estagiário</option>
+                                <option>Júnior</option>
+                                <option>Pleno</option>
+                                <option>Sênior</option>
+                                <option>freelancer</option>
+                                <option>Startup</option>
+                            </select>
+                        </fieldset>
+
+                        <legend class="checkbox novidades"><input type="checkbox" checked>Gostaria de receber nossas
+                            novidades por
+                            email?</legend>
+
+                        <legend class="espaco" for="mensagem">Deixe seu feedback</legend>
+                        <textarea cols="30" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                        <input type="submit" value="Enviar formulário" class="enviar">
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <a href="https://www.linkedin.com/in/raphael-jovino-desenvolvedor-programador-analista" target="_blank">
+                <small>&copy; Copyright 2022, Raphael Jovino </small></a>
+        </footer>
+    </body>
+
+</html>
